@@ -1,58 +1,128 @@
 <!DOCTYPE html>
 <html> 
 <head> 
+  <!-- Connect Font Awesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lora|Roboto:400,700" rel="stylesheet">
   <style>
-    * {
-      border: 1px red dashed;
+
+    html{
+      min-height: 100%;
+    }
+
+    body{
+      min-height: 100%;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background: linear-gradient(135deg, #069f7e, #11859b, #1b5597, #252f93, #492e8f);
+      color: white;
+      font-family: 'Lora', serif;
+    }
+
+    a{
+      color: white;
+    }
+
+    .avatar-image{
+      width: 128px;
+      height: 128px;
+      object-fit: cover;
+      border-radius: 128px;
+    }
+
+    .thumbnail{
+      width: 48px;
+      height: 48px;
+      border-radius: 13px;
+      object-fit: cover;
+    }
+
+    .links-header{
+      text-align:center;
+      padding-bottom: 20px;
+      font-size: 24px;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .link-item {
+      background-color: #4f7478;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .main-container{
+      max-width: 640px;
+      margin: auto;
+    }
+
+    .image-row {
+    margin-bottom: 20px;
+    text-align: center;
+    }
+
+    .name-row {
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 40px;
+      font-family: 'Roboto', sans-serif;
+    }
+    .social-icons-row {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-around;
+    }
+    .link-text{
+      text-align: center;
+      flex-grow: 1;
     }
   </style>  
   <title> Nina's page</title>
 </head>
+
   <body>
-    <h1> My link in bio</h1> 
     <div class="main-container">
       <div class="image-row">
-        <img src="thumbnails/profile_pic.png" alt="headshot">
+        <img src="thumbnails/profile_pic.png" alt="headshot" class="avatar-image">
       </div>
       <div class="name-row">
         Nina Anwar
       </div>
-      <div class="social-icons">
-        Social icons go here
+      <div class="social-icons-row">
         <a href="https://www.linkedin.com/in/nina-p-anwar/" target="_blank">
           LinkedIn
         </a>
         <a href="https://www.instagram.com/anwnina/" target="_blank">
           Instagram
         </a>
-        <a href="https://account.venmo.com/u/anwnina?catchAll=u&catchAll=anwnina" target="_blank">
-          Venmo
-        </a>
         <a href="https://www.facebook.com/nina.anwar.9696/" target="_blank">
           Facebook
         </a>
+        <a href="https://account.venmo.com/u/anwnina?catchAll=u&catchAll=anwnina" target="_blank">
+          Venmo
+        </a>
       </div>
       <div class="links-row">
-      Business podcasts I'm listening to...
+      <div class ="links-header"> Business podcasts I'm listening to...</div>
         <div class="link-item">
           <img src="/thumbnails/Morning-Brew-Daily.jpg" alt="Morning Brew Daily thumbnail" class="thumbnail">
-          <a href="https://open.spotify.com/show/7nc7OQdPTekErtFSRxOBKh?si=d0d065aa64674904" target="_blank">Morning Brew Daily</a>
+          <a class="link-text" href="https://open.spotify.com/show/7nc7OQdPTekErtFSRxOBKh?si=d0d065aa64674904" target="_blank">Morning Brew Daily</a>
         </div>
         <div class="link-item">
           <img src="/thumbnails/Hard-Fork.jpg" alt="Hard Fork thumbnail" class="thumbnail">
-          <a href="https://open.spotify.com/show/44fllCS2FTFr2x2kjP9xeT?si=58139b329a3744cf" target="_blank">Hard Fork</a>
+          <a class="link-text" href="https://open.spotify.com/show/44fllCS2FTFr2x2kjP9xeT?si=58139b329a3744cf" target="_blank">Hard Fork</a>
         </div>
         <div class="link-item">
-          <img src="/thumbnails/Planet-Money.jpg" alt="Planet Money thumbnail" class="thumbnail">
-          <a href="https://open.spotify.com/show/4FYpq3lSeQMAhqNI81O0Cn?si=ec1c12061d0549cf" target="_blank">Planet Money</a>
+          <img src="/thumbnails/Planet-Money.png" alt="Planet Money thumbnail" class="thumbnail">
+          <a class="link-text" href="https://open.spotify.com/show/4FYpq3lSeQMAhqNI81O0Cn?si=ec1c12061d0549cf" target="_blank">Planet Money</a>
         </div>
         <div class="link-item">
           <img src="/thumbnails/TEOET.jpg" alt="The Economics of Everyday Things thumbnail" class="thumbnail">
-          <a href="https://open.spotify.com/show/4FYpq3lSeQMAhqNI81O0Cn?si=ec1c12061d0549cf" target="_blank">The Economics of Everyday Things</a>
+          <a class="link-text" href="https://open.spotify.com/show/4FYpq3lSeQMAhqNI81O0Cn?si=ec1c12061d0549cf" target="_blank">The Economics of Everyday Things</a>
         </div>
         <div class="link-item">
           <img src="/thumbnails/Marketplace.png" alt="Marketplace thumbnail" class="thumbnail">
-          <a href="https://open.spotify.com/show/6zYlX5UGEPmNCWacYUJQGD?si=7e8d581f87cc40a1" target="_blank">Marketplace</a>
+          <a class="link-text" href="https://open.spotify.com/show/6zYlX5UGEPmNCWacYUJQGD?si=7e8d581f87cc40a1" target="_blank">Marketplace</a>
         </div>
       </div>
     </div>
